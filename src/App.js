@@ -1,24 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min'
+import Card from './Card';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <section className="pricing py-5">
+      <div className="container">
+        <h1>Price cart - React</h1>
+        <div className="row">
+          <Card cardName ="FREE" price="0" />
+          <Card cardName ="PLUS" price="9"/>
+          <Card cardName ="PRO" price="49"/>
+        </div>
     </div>
+  </section>
   );
 }
 
