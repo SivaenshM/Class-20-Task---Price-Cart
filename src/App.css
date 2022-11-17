@@ -1,8 +1,10 @@
+/* ------Body Styling------- */
 body {
     background: #007bff;
     background: linear-gradient(to right, #0062E6, #33AEFF);
   }
   
+  /* ------Card Styling------- */
   .pricing .card {
     border: none;
     border-radius: 1rem;
@@ -34,7 +36,7 @@ body {
   .pricing .card-price .period {
     font-size: 0.8rem;
   }
-  
+  /* ------Benifits Styling------- */
   .pricing ul li {
     margin-bottom: 1rem;
     list-style: none;
@@ -58,7 +60,7 @@ body {
     transition: all 0.2s;
   }
   
-  /* Hover Effects on Card */
+  /* Hover Effects on Card media Query */
   
   @media (min-width: 992px) {
     .pricing .card:hover {

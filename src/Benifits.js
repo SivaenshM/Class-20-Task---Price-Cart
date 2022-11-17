@@ -1,7 +1,10 @@
 import React from 'react'
+// imported Check and time Favivons from react-icons
 import { FaCheck, FaTimes } from "react-icons/fa";
 
+// Benifits component to render benifits of plan
 const Benifits = ({cardName}) => {
+    //Free card and benifits
     if(cardName==="FREE") {
         return(
             <div>
@@ -16,6 +19,7 @@ const Benifits = ({cardName}) => {
             </div>
 
         )
+        //Plus card and benifits
     }else if(cardName==="PLUS") {
         return (
             <div>
@@ -29,6 +33,7 @@ const Benifits = ({cardName}) => {
                 <li className="text-muted"><span><FaTimes/></span>Monthly Status Reports</li>
             </div>
         )
+        //pro card and benifits
     }else{
         return(
             <div>
